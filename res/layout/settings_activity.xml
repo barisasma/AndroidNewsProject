@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Metin Boyutu"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   <RadioGroup android:id="@+id/rg_size"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content" >
+    <RadioButton
+        android:id="@+id/rd_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Küçük" />
+
+    <RadioButton
+        android:id="@+id/rd_big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Büyük" />
+    
+    </RadioGroup>
+    
+     <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sıralama Tipi"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+ <RadioGroup android:id="@+id/rg_sorting"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content" >
+    <RadioButton
+        android:id="@+id/rd_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Okunma Sayısı" />
+
+    <RadioButton
+        android:id="@+id/rd_letter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rd_read"
+        android:text="Harfe Göre" />
+    </RadioGroup>
+    
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Uygula" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btn_confirm"
+        android:text="İptal" />
+
+  
+</RelativeLayout>
+
+</LinearLayout>
